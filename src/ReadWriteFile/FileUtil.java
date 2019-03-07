@@ -10,7 +10,6 @@ public class FileUtil {
              Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outFilePath)))
         ) {
             while ((readLine = bufferedReader.readLine()) != null) {
-
                 writer.write(readLine);
                 writer.write(System.lineSeparator());
             }
